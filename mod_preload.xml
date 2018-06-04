@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+  <name>MOD_PRELOAD</name>
+	<author>SPEDI srl</author>
+	<creationDate>Dicember 2016</creationDate>
+	<copyright>Copyright (C) 1991 - 2016 SPEDI srl. Tutti i diritti riservati.</copyright>
+	<license>GNU General Public License version 2 or later;</license>
+	<authorEmail>sviluppo@spedi.it</authorEmail>
+	<authorUrl>http://www.spedi.it</authorUrl>
+	<version>3.0.0</version>
+	<description>MOD_PRELOAD_DESC</description>
+    <files>
+      <filename>mod_preload.xml</filename>
+      <filename module="mod_preload">mod_preload.php</filename>
+      <filename>index.html</filename>
+      <folder>tmpl</folder>
+      <folder>css</folder>
+      <folder>js</folder>
+      <folder>language</folder>
+    </files>
+    <config>
+      <fields name="params">
+        <fieldset name="basic">
+          <field
+            name="preloader-type"
+    				type="list"
+    				label="MOD_PRELOAD_TYPE"
+    				description="MOD_PRELOAD_TYPE_DESC"
+    			>
+    				<option value="ball-pulse">ball-pulse</option>
+    				<option value="ball-grid-pulse">ball-grid-pulse</option>
+    				<option value="ball-clip-rotate">ball-clip-rotate</option>
+    				<option value="ball-clip-rotate-pulse">ball-clip-rotate-pulse</option>
+    				<option value="square-spin">square-spin</option>
+    				<option value="ball-clip-rotate-multiple">ball-clip-rotate-multiple</option>
+    				<option value="ball-pulse-rise">ball-pulse-rise</option>
+    				<option value="ball-rotate">ball-rotate</option>
+    				<option value="cube-transition">cube-transition</option>
+    				<option value="ball-zig-zag">ball-zig-zag</option>
+    				<option value="ball-zig-zag-deflect">ball-zig-zag-deflect</option>
+    				<option value="ball-triangle-path">ball-triangle-path</option>
+            <option value="ball-scale">ball-scale</option>
+            <option value="line-scale">line-scale</option>
+            <option value="line-scale-party">line-scale-party</option>
+            <option value="ball-scale-multiple">ball-scale-multiple</option>
+            <option value="ball-pulse-sync">ball-pulse-sync</option>
+            <option value="ball-beat">ball-beat</option>
+            <option value="line-scale-pulse-out">line-scale-pulse-out</option>
+            <option value="line-scale-pulse-out-rapid">line-scale-pulse-out-rapid</option>
+            <option value="ball-scale-ripple">ball-scale-ripple</option>
+            <option value="ball-scale-ripple-multiple">ball-scale-ripple-multiple</option>
+            <option value="ball-spin-fade-loader">ball-spin-fade-loader</option>
+            <option value="line-spin-fade-loader">line-spin-fade-loader</option>
+            <option value="triangle-skew-spin">triangle-skew-spin</option>
+            <option value="pacman">pacman</option>
+            <option value="semi-circle-spin">semi-circle-spin</option>
+            <option value="ball-grid-beat">ball-grid-beat</option>
+            <option value="ball-scale-random">ball-scale-random</option>
+    			</field>
+
+          <field
+            name="preloader-color"
+            type="color"
+            default="#00a9e2"
+            label="MOD_PRELOAD_COLOR"
+            description="MOD_PRELOAD_COLOR_DESC"
+          />
+
+          <field
+            name="preloader-bgcolor"
+            type="color"
+            default="#eeeeee"
+            label="MOD_PRELOAD_BGCOLOR"
+            description="MOD_PRELOAD_BGCOLOR_DESC"
+          />
+        </fieldset>
+      </fields>
+    </config>
+</extension>
